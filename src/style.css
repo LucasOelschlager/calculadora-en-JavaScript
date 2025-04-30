@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@font-face {
+    font-family: 'calculator-font';
+    src: url(fonts/digital-7.ttf) format('truetype');
+    font-weight: normal;
+}
 
 .cal-container {
     width: 100%;
@@ -20,6 +25,8 @@
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+    
 }
 
 .calc-body {
@@ -45,18 +52,20 @@
 
 .calc-output input {
     width: 90%;
-    padding: 20px 10px;
+    padding: 10px 10px;
     height: 100%;
     background-color: #1f2937; 
     border: none;
     color: #e5e7eb; 
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: right;
     padding-right: 10px;
     border-radius: 10px;
     box-sizing: border-box;
     outline: none;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: calculator-font;
+    
 }
 
 
